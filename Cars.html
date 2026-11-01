@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ar" xml:lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>السيارات - مكتب تأجير السيارات</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="myFunctions.js"></script>
+</head>
+<body>
+  <div id="header">
+    <h1>مكتب الشام لتأجير السيارات</h1>
+    <ul class="nav">
+      <li><a href="home.html">الرئيسية</a></li>
+      <li><a href="AboutUs.html">من نحن</a></li>
+      <li><a href="Cars.html" class="active">السيارات</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h2>السيارات المتوفرة للتأجير</h2>
+    <table class="data-table" id="carsTable">
+      <thead>
+        <tr>
+          <th>الرمز</th>
+          <th>الصورة</th>
+          <th>الموديل</th>
+          <th>سنة الصنع</th>
+          <th>السعر اليومي</th>
+          <th>إظهار التفاصيل</th>
+          <th>اختيار</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="car-row">
+          <td>CR-001</td>
+          <td><img src="images/car1.svg" alt="Toyota Corolla" width="90" height="45" /></td>
+          <td class="car-model">Toyota Corolla</td>
+          <td>2023</td>
+          <td>250000 ل.س</td>
+          <td><input type="checkbox" class="details-toggle" title="إظهار التفاصيل" /></td>
+          <td><input type="checkbox" class="car-select" name="cars" value="CR-001" data-model="Toyota Corolla" data-price="250000" title="اختيار" /></td>
+        </tr>
+        <tr class="details-row">
+          <td colspan="7">
+            <div class="details">
+              نوع الوقود: بنزين | ناقل الحركة: أوتوماتيك | عدد المقاعد: 5 | عداد الكيلومترات: 35,000 كم | اللون: أبيض
+            </div>
+          </td>
+        </tr>
+        <tr class="car-row">
+          <td>CR-002</td>
+          <td><img src="images/car2.svg" alt="Kia Sportage" width="90" height="45" /></td>
+          <td class="car-model">Kia Sportage</td>
+          <td>2022</td>
+          <td>400000 ل.س</td>
+          <td><input type="checkbox" class="details-toggle" title="إظهار التفاصيل" /></td>
+          <td><input type="checkbox" class="car-select" name="cars" value="CR-002" data-model="Kia Sportage" data-price="400000" title="اختيار" /></td>
+        </tr>
+        <tr class="details-row">
+          <td colspan="7">
+            <div class="details">
+              نوع الوقود: ديزل | ناقل الحركة: أوتوماتيك | عدد المقاعد: 5 | عداد الكيلومترات: 48,000 كم | اللون: أسود
+            </div>
+          </td>
+        </tr>
+        <tr class="car-row">
+          <td>CR-003</td>
+          <td><img src="images/car3.svg" alt="Hyundai Elantra" width="90" height="45" /></td>
+          <td class="car-model">Hyundai Elantra</td>
+          <td>2024</td>
+          <td>300000 ل.س</td>
+          <td><input type="checkbox" class="details-toggle" title="إظهار التفاصيل" /></td>
+          <td><input type="checkbox" class="car-select" name="cars" value="CR-003" data-model="Hyundai Elantra" data-price="300000" title="اختيار" /></td>
+        </tr>
+        <tr class="details-row">
+          <td colspan="7">
+            <div class="details">
+              نوع الوقود: بنزين | ناقل الحركة: أوتوماتيك | عدد المقاعد: 5 | عداد الكيلومترات: 12,000 كم | اللون: فضي
+            </div>
+          </td>
+        </tr>
+        <tr class="car-row">
+          <td>CR-004</td>
+          <td><img src="images/car4.svg" alt="Chevrolet Spark" width="90" height="45" /></td>
+          <td class="car-model">Chevrolet Spark</td>
+          <td>2021</td>
+          <td>180000 ل.س</td>
+          <td><input type="checkbox" class="details-toggle" title="إظهار التفاصيل" /></td>
+          <td><input type="checkbox" class="car-select" name="cars" value="CR-004" data-model="Chevrolet Spark" data-price="180000" title="اختيار" /></td>
+        </tr>
+        <tr class="details-row">
+          <td colspan="7">
+            <div class="details">
+              نوع الوقود: بنزين | ناقل الحركة: يدوي | عدد المقاعد: 4 | عداد الكيلومترات: 60,000 كم | اللون: أصفر
+            </div>
+          </td>
+        </tr>
+        <tr class="car-row">
+          <td>CR-005</td>
+          <td><img src="images/car5.svg" alt="Nissan Sunny" width="90" height="45" /></td>
+          <td class="car-model">Nissan Sunny</td>
+          <td>2023</td>
+          <td>220000 ل.س</td>
+          <td><input type="checkbox" class="details-toggle" title="إظهار التفاصيل" /></td>
+          <td><input type="checkbox" class="car-select" name="cars" value="CR-005" data-model="Nissan Sunny" data-price="220000" title="اختيار" /></td>
+        </tr>
+        <tr class="details-row">
+          <td colspan="7">
+            <div class="details">
+              نوع الوقود: بنزين | ناقل الحركة: يدوي | عدد المقاعد: 5 | عداد الكيلومترات: 28,000 كم | اللون: أزرق
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><input type="button" id="continueBtn" class="btn" value="متابعة" /></p>
+    <p id="selectMsg" class="error"></p>
+
+    <form id="bookingForm" action="#" method="post" novalidate="novalidate">
+      <fieldset>
+        <legend>طلب حجز إلكتروني</legend>
+
+        <label for="fullName">الاسم الكامل (أحرف عربية فقط):</label>
+        <input type="text" id="fullName" name="fullName" />
+        <span class="error" id="fullNameErr"></span>
+
+        <label for="nationalId">الرقم الوطني (11 خانة) *:</label>
+        <input type="text" id="nationalId" name="nationalId" maxlength="11" inputmode="numeric" />
+        <span class="error" id="nationalIdErr"></span>
+
+        <label for="startDate">تاريخ بداية التأجير (dd-mm-yyyy) *:</label>
+        <input type="text" id="startDate" name="startDate" placeholder="dd-mm-yyyy" />
+        <span class="error" id="startDateErr"></span>
+
+        <label for="endDate">تاريخ نهاية التأجير (dd-mm-yyyy) *:</label>
+        <input type="text" id="endDate" name="endDate" placeholder="dd-mm-yyyy" />
+        <span class="error" id="endDateErr"></span>
+
+        <label for="mobile">رقم الموبايل (Syriatel / MTN):</label>
+        <input type="tel" id="mobile" name="mobile" placeholder="09xxxxxxxx" />
+        <span class="error" id="mobileErr"></span>
+
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" id="email" name="email" />
+        <span class="error" id="emailErr"></span>
+
+        <p>
+          <input type="submit" class="btn" value="إرسال" />
+          <input type="reset" class="btn btn-secondary" value="مسح" />
+        </p>
+      </fieldset>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <div id="footer">
+    <p>جميع الحقوق محفوظة &#169; 2026 - مكتب الشام لتأجير السيارات</p>
+  </div>
+</body>
+</html>
