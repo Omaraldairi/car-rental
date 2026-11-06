@@ -70,6 +70,9 @@ input[type="text"], input[type="tel"], input[type="email"] {
   cursor: pointer;
 }
 .btn:hover { background-color: #1f4e79; }
+.btn-link { display: inline-block; text-decoration: none; font-weight: bold; }
+.steps li { margin-bottom: 6px; }
+.hint { background-color: #fff8e1; border-right: 4px solid #f1c40f; padding: 10px; }
 .btn-secondary { background-color: #8a96a3; }
 
 .error { color: #c0392b; font-size: 13px; display: block; }
